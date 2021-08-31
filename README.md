@@ -5,6 +5,6 @@
   + Clone this repo
   + Locate to the right path in your terminal, run `bundle install`, then `bundle update`
   + Run `bundle exec jekyll serve`
-  + Check it on `localhost:4000`
+  + Check it on [localhost:4000]localhost:4000
 
 
