@@ -3,6 +3,40 @@ title: Homepage
 layout: default
 ---
 
-<div class="container border">
-    hello
-</div>
+      <!-- News Box -->
+      <div class="col-lg-4 col-md-5 col-sm-12 bg-lesswhite">
+        {%- if site.posts.size > 0 -%}
+        <h1 class="h1Homepage">News Spotlight</h1>
+        <div class="wrapHomeTitle mx-auto">
+          <ul class="post-list list-group">
+
+            {%- for post in site.posts -%}
+            <li class="headingOne">
+              <h2 class="mb-0">
+                <div class="list-group-item text-center btn-link shadow">
+                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                  <div class="post-meta my-1">{{ post.date | date: date_format }}</div>
+                  <div><a href="{{ post.url | relative_url }}" class="post-link">
+                      {{ post.title | escape }}</a></div>
+                </div>
+              </h2>
+
+            {%- endfor -%}
+
+          </ul>
+
+          <div class="d-flex justify-content-center mt-2">
+            <a class="btn btn-outline-danger more-info" href="/about/news-events/news/">View All <span
+                class="visually-hidden">news articles</span></a>
+          </div>
+          <span class="badge float-end">
+            <a title="RSS Feed" href="{{ 'feed.xml' | relative_url }}">
+              <svg class="svg-icon orange" title="" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+              </svg>
+              Subscribe
+            </a>
+          </span>
+        </div>
+        {%- endif -%}
+      </div>
