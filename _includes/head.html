@@ -7,4 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/homepage.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styleNaviAndFooter.css' | relative_url }}">
+  
+    <link rel="shortcut icon" type="image/png" href="/assets/image/stie-logo.png">
+  
+    {% if layout.custom-css %}
+    {% for stylesheet in layout.custom-css %}
+    <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+    {% endfor %}
+    {% endif %}
+  
+    {% if page.custom-css %}
+    {% for stylesheet in page.custom-css %}
+    <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+    {% endfor %}
+    {% endif %}
+  
+    {%- feed_meta -%}
+
 </head>
