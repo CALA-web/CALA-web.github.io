@@ -1,3 +1,4 @@
+# CALA-web.github.io
 # Chinese American Librarians Association
 
 ## To run in your local machine
@@ -6,5 +7,3 @@
   + Locate to the right path in your terminal, run `bundle install`, then `bundle update`
   + Run `bundle exec jekyll serve`
   + Check it on [http://localhost:4000](http://localhost:4000)
-
-
