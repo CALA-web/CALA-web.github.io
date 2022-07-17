@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import "minima";
+// @import "minima";
 
 // Base styles (To override Bootstrap)
 $primary:       #BE2239;
@@ -20,5 +20,5 @@ $warning:       #ED8A26;
 $warning-hover: #BA6C1E;
 $warning-disabled: #F2B67B;
 
-@import "../node_modules/rfs/scss";
+// @import "../node_modules/rfs/scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
