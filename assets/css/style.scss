@@ -1,24 +1,25 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 // @import "minima";
 
 // Base styles (To override Bootstrap)
-$primary:       #BE2239;
+$primary: #be2239;
 $primary-hover: #811726;
-$primary-disabled: #ED8F9C;
+$primary-disabled: #ed8f9c;
 
-$success:       #61A51D;
+$success: #61a51d;
 $success-hover: #467320;
-$success-disabled: #6ECB83;
+$success-disabled: #6ecb83;
 
-$info:          #0F89BF;
-$info-hover:    #0F5473;
-$info-disabled: #5CB3D9;
+$info: #0f89bf;
+$info-hover: #0f5473;
+$info-disabled: #5cb3d9;
 
-$warning:       #ED8A26;
-$warning-hover: #BA6C1E;
-$warning-disabled: #F2B67B;
+$warning: #ed8a26;
+$warning-hover: #ba6c1e;
+$warning-disabled: #f2b67b;
 
-// @import "../node_modules/rfs/scss";
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import '../../node_modules/rfs/';
+@import '../node_modules/bootstrap/scss/bootstrap';
